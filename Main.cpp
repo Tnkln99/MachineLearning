@@ -1,6 +1,8 @@
-#include <iostream>
+#include "Functions.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    vector<pair<float,float>> dataSet = Functions::readFile("data/test.csv");
+    Functions::createModel(dataSet);
+
     return 0;
 }
